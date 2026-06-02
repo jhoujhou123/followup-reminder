@@ -12,8 +12,8 @@ from datetime import datetime
 from oauth2client.service_account import ServiceAccountCredentials
 
 def send_email(to_email, subject, body):
-    sender_email = "jhou961231@gmail.com"
-    sender_password = "rwub gask bdcn dbkj"  # ⚠️ 不是登入密碼
+    sender_email = os.environ["EMAIL_USER"]
+    sender_password = os.environ["EMAIL_PASS"] # ⚠️ 不是登入密碼
 
     msg = MIMEMultipart()
     msg["From"] = sender_email
