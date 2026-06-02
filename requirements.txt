@@ -1,0 +1,6 @@
+gspread
+google-auth
+pandas
+gspread
+google-auth
+pandas
